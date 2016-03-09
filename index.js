@@ -24,7 +24,7 @@ app.get('/', function(request, response) {
  */
 
 
-app.get('/getUniversityList' , function(req, res){
+app.get('/getUniversityList' , function(request, response){
 
   // fs.readFile(request.url.substring(1,request.url.length),function(error,contents) {
   //     console.log('ERROR? ' + error);
@@ -121,12 +121,9 @@ app.get('/getUniversityList' , function(req, res){
           }
         ];
 
-
-
-
     //  response.writeHead(200, {'Content-Type': 'text/html'});
       response.send(JSON.stringify(universitylist));
-  
+
 
 
 });

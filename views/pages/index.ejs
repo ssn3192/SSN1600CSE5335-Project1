@@ -53,7 +53,7 @@
             $.getJSON('https://finalcse53351001121600.herokuapp.com/getUniversityList', function (data) {
 
                 data = data; // store gloally
-
+                alert(data[0]);
                 /* By default first object in array will be center */
                 var loc = {
                     lat: data.universitylist[0].lat,

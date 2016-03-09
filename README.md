@@ -22,6 +22,7 @@ I  found extracting json file and dispalying it on web page was the easy part. I
 
 D. What aspect of the implementation did you find hard, if any, and why?
 
+The most diffcult part was deploying an application on heroku which took more time then implementating this assignment.
 As nodejs was new technology for me, I was not familiar with its working. Hence I found it initially diffcult to understand. With the help of nodejs online tutorials, class lectures and professor's guidance, I copop with it.
 Secondly, the bonus point task for generating google maps was also diffcult. But the links provided in the description of assignment
 helped to get rid off the diffculty.

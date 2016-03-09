@@ -56,8 +56,8 @@
                 //alert(data[0]);
                 /* By default first object in array will be center */
                 var loc = {
-                    lat: data.universitylist[0].lat
-                    lng: data.universitylist[0].lng
+                    lat: data[0].lat,
+                    lng: data[0].lng
                 };
 
                 /* Init google map and initializae marker */
@@ -70,15 +70,15 @@
                 "</tr>"
 
 
-                for (var i in data.universitylist)
-                    output += "<tr>" + "<td onclick=\"setMarkerPosition('"+ data.universitylist[i].lat +"', '"+ data.universitylist[i].lng +"')\">"
-                        + data.universitylist[i].Name +
+                for (var i in data)
+                    output += "<tr>" + "<td onclick=\"setMarkerPosition('"+ data[i].lat +"', '"+ data[i].lng +"')\">"
+                        + data[i].Name +
                         "</td>" +
                         "<td>" +
-                        data.universitylist[i].City + "</td>" +
+                        data[i].City + "</td>" +
                         "</td>" +
                         "<td>" +
-                        data.universitylist[i].State +
+                        data[i].State +
                         "</td>" +
                         "</tr>";
                 output += "</table>";

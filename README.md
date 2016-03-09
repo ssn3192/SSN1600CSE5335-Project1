@@ -35,3 +35,20 @@ F. What Ubuntu commands are required to deploy and run your server?
 In case of uploading code on Github I had used webstrom editor to implement this assignment where there is a facility of importing your project directly on github.
 The steps are:
 choose VCS | Import into Version Control | Share Project on GitHub
+git init
+echo "# CSE5335-project-1" >> README.md
+git add README.md
+git commit -m "My Commit"
+git remote add origin https://github.com/ssn3192/CSE5335-Project1.git
+git push -u origin master
+
+
+For heroku
+ heroku login
+ git init
+ git add .
+ git commit -m "Message"
+ git push heroku master
+ heroku open
+ heroku sharing:add samvaran.rallabandi@mavs.uta.edu 
+ heroku sharing:add emmons@uta.edu

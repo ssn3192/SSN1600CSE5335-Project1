@@ -32,7 +32,7 @@ app.get('/getUniversityList' , function(req, res){
   //         console.log('CONTENTS ' + contents.toString());
 
 
-  var universitylist [
+  var universitylist = [
           {
             "Name": "Columbia University",
             "City": "New York",

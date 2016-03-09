@@ -124,9 +124,9 @@ app.get('/getUniversityList' , function(req, res){
 
 
 
-      response.writeHead(200, {'Content-Type': 'text/html'});
-      response.end(universitylist);
-  });
+    //  response.writeHead(200, {'Content-Type': 'text/html'});
+      response.send(JSON.stringify(universitylist));
+  
 
 
 });
